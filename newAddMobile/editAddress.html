@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>编辑配送地址</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/addStudent.css" />
+	</head>
+	<body>
+		<!--头部S-->
+		<div class="choose_top">
+		        编辑配送地址
+		    <a href="javascript:;" class="choose_arrow"></a>
+		</div>
+		<!--头部E-->
+		<!--内容S-->
+		<ul class="border-box">
+			<li class="clearfix border_smallbox">
+				<span class="fl choose_title">收货人</span>
+				<input type="text" placeholder="请输入姓名" class="fr chosse-detail">
+			</li>
+			<li class="clearfix border_smallbox">
+				<span class="fl choose_title">手机号码</span>
+				<input type="text" maxlength="11" placeholder="请输入您的手机号" class="fr chosse-detail">
+			</li>
+			<li class="clearfix border_smallbox">
+				<span class="fl choose_title">省份</span>
+				<h4 class="fr choosecity_box">
+					<span class="icon_mask"></span>
+					<select class="fr choose_palce">
+						<option value="">请选择</option>
+						<option value="">山西省</option>
+						<option value="">内蒙古自治区</option>
+					</select>
+				</h4>
+			</li>
+			<li class="clearfix border_smallbox">
+				<span class="fl choose_title">市</span>
+				<h4 class="fr choosecity_box">
+					<span class="icon_mask"></span>
+					<select class="fr choose_palce">
+						<option value="">武汉</option>
+						<option value="">南京</option>
+						<option value="">成都</option>
+					</select>
+				</h4>
+			</li>
+			<li class="clearfix border_smallbox">
+				<span class="fl choose_title">区</span>
+				<h4 class="fr choosecity_box">
+					<span class="icon_mask"></span>
+					<select class="fr choose_palce">
+						<option value="">黄婆</option>
+						<option value="">的话</option>
+						<option value="">打开</option>
+					</select>
+				</h4>
+			</li>
+			<li class="clearfix detail-box">
+				<span class="fl choose_title">详细地址</span>
+				<textarea class="fr detail-address" placeholder="请填写详细地址"></textarea>
+			</li>
+			<li class="clearfix border_smallbox">
+				<span class="fl choose_title">邮政编码</span>
+				<input type="text" maxlength="11" placeholder="请输入您的邮编" class="fr chosse-detail">
+			</li>
+			<li class="clearfix border_smallbox">
+				<span class="fl choose_title">固定电话</span>
+				<input type="text" maxlength="11" placeholder="请输入您的固定电话" class="fr chosse-detail">
+			</li>
+		</ul>
+		<!--内容E-->
+		<!--设为默认地址S-->
+		<div class="invoice">
+		    <span>设为默认地址</span>
+		    <section class="model-2">
+		        <div class="checkbox">
+		            <input type="checkbox">
+		            <label></label>
+		        </div>
+		    </section>
+		</div>
+		<!--设为默认地址E-->
+		<div class="submit-box">
+			<div class="submit_save">保存</div>
+		</div>
+	</body>
+	
+	<!--自适应布局JS-->
+	<script>
+		(function(win, doc) {
+			function change() {
+				doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 320 * 20 + 'px';
+			}
+
+			change();
+			win.addEventListener('resize', change, false);
+		})(window, document);
+	</script>
+	<!--自适应布局JS-->
+</html>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,span,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,object,form,iframe,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{ margin: 0; font-weight: normal; font-size: 12px;}
+a{ color: #333333;  text-decoration: none;}
+ol,ul,li{ list-style: none;}
+i,em{ font-style: normal;}
+b,strong{ font-weight: normal;}
+a img{display:block; border: none;}
+.clearfix:after{ display: block; content: ""; clear: both;}
+.clearfix{ zoom: 1;}
+.fl{ display:inline; float: left;}
+.fr{ display:inline; float: right;}
+input,select { border:none 0; background:none; font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;}
+textarea, input, select { outline:none; resize: none; /*appearance:none; -moz-appearance:none; -webkit-appearance:none;*/}
+table { table-layout:fixed; border-collapse:collapse;}
+body{ font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif; color: #333333;}
+input{ letter-spacing:1px;}
+::-webkit-input-placeholder{ font-size:14px;}
+img{
+    width: 100%;
+    height: 100%;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+.posR{
+	position: relative;
+}
+
+

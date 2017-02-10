@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>管理配送地址</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/addStudent.css" />
+	</head>
+	<body>
+		<div>
+		<div>
+			<div class="choose_top">
+			        管理配送地址
+			    <a href="javascript:;" class="choose_arrow"></a>
+			    <a href="javascript:;" class="new_plus">新增</a>
+			</div>
+			<div id="addressList">
+			<div>
+				<!--配送地址S-->
+				<div class="send-modebox">
+					<div class="send-namebox">
+						<h3 class="send-name">
+							<span>张伟伟</span>
+							<i>14565454434</i>
+						</h3>
+						<p class="send-adress">北京海淀区就看得见三看九分裤艰苦奋斗时间啊</p>
+					</div>
+					<div class="clearfix defult-adressbox">
+						<span class="fl defult-adress defult-adress-on">默认地址</span>
+						<span class="fr adress-delete">删除</span>
+						<span class="fr adress-make">编辑</span>			
+					</div>
+				</div>
+				<!--配送地址E-->
+				<!--配送地址S-->
+				<div class="send-modebox">
+					<div class="send-namebox">
+						<h3 class="send-name">
+							<span>张伟伟</span>
+							<i>14565454434</i>
+						</h3>
+						<p class="send-adress">北京海淀区就看得见三看九分裤艰苦奋斗时间啊</p>
+					</div>
+					<div class="clearfix defult-adressbox">
+						<span class="fl defult-adress">默认地址</span>
+						<span class="fr adress-delete">删除</span>
+						<span class="fr adress-make">编辑</span>			
+					</div>
+				</div>
+				<!--配送地址E-->
+				<!--配送地址S-->
+				<div class="send-modebox">
+					<div class="send-namebox">
+						<h3 class="send-name">
+							<span>张伟伟</span>
+							<i>14565454434</i>
+						</h3>
+						<p class="send-adress">北京海淀区就看得见三看九分裤艰苦奋斗时间啊</p>
+					</div>
+					<div class="clearfix defult-adressbox">
+						<span class="fl defult-adress">设为默认</span>
+						<span class="fr adress-delete">删除</span>
+						<span class="fr adress-make">编辑</span>			
+					</div>
+				</div>
+				<!--配送地址E-->
+				<!--配送地址S-->
+				<div class="send-modebox">
+					<div class="send-namebox">
+						<h3 class="send-name">
+							<span>张伟伟</span>
+							<i>14565454434</i>
+						</h3>
+						<p class="send-adress">北京海淀区就看得见三看九分裤艰苦奋斗时间啊</p>
+					</div>
+					<div class="clearfix defult-adressbox">
+						<span class="fl defult-adress">默认地址</span>
+						<span class="fr adress-delete">删除</span>
+						<span class="fr adress-make">编辑</span>			
+					</div>
+				</div>
+				<!--配送地址E-->
+			</div>
+			</div>
+		</div>
+		</div>
+		<!--遮罩层S-->
+		<div class="add-mask" style="display: none;"></div>
+		<!--遮罩层E-->
+		<!--确认删除地址弹窗S-->
+		<div class="popup-box" style="display: none;">
+			<div class="popup-top">
+				<p>删除提示</p>
+				<p>确认删除该地址吗？</p>
+			</div>
+			<div class="clearfix popup-foot">
+				<span class="fl">取消</span>
+				<span class="fr">确定</span>
+			</div>
+		</div>
+		<!--确认删除地址弹窗E-->
+		<!--确认删除常用学员弹窗S-->
+		<div class="popup-box" style="display: none;">
+			<div class="popup-top">
+				<p>删除提示</p>
+				<p>确认删除该学员吗？</p>
+			</div>
+			<div class="clearfix popup-foot">
+				<span class="fl">取消</span>
+				<span class="fr">确定</span>
+			</div>
+		</div>
+		<!--确认删除常用学员弹窗E-->
+	</body>
+	<script src="dist/react.min.js"></script>
+	<script src="dist/react-dom.min.js"></script>
+	<script src="dist/index.js"></script>
+	<!--自适应布局JS-->
+	<script>
+		(function(win, doc) {
+			function change() {
+				doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 320 * 20 + 'px';
+			}
+
+			change();
+			win.addEventListener('resize', change, false);
+		})(window, document);
+	</script>
+	<!--自适应布局JS-->
+</html>

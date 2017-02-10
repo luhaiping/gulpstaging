@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>登录注册</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/addStudent.css" />
+	</head>
+	<body>
+		<!--头部登录注册S-->
+		<div class="head-topbox">
+			<h2>我</h2>
+			<img src="img/head_logo.png" alt="" />
+			<!--登录前S-->
+			<div class="register-box" style="display: none;">
+				<a href="javascript:;">登录</a> /
+				<a href="javascript:;">注册</a>
+			</div>
+			<!--登录前E-->
+			
+			<!--登录后S-->
+			<div class="register-box" style="display: block;">宋仲基</div>
+			<!--登录后E-->
+			<!--绑定前S-->
+			<div class="clearfix head-bindbox" style="display: block;">
+				<span class="fl">享受班级服务与会员积分须绑定学员号</span>
+				<a href="javascript:;" class="fr">马上绑定</a>
+			</div>
+			<!--绑定前E-->
+			
+			<!--绑定后S-->
+			<div class="clearfix head-bindbox" style="display: none;">
+				<span class="fl">已绑定的学员号</span>
+				<div class="fr xueyuan-box">
+					<i class="xueyuan_tittle xueyuan_tittle_up">b456789876</i>
+					<ul class="xueyuan-list">
+						<li>b456785678</li>
+						<li>b456785678</li>
+						<li>b456785678</li>
+					</ul>
+				</div>
+			</div>
+			<!--绑定后E-->
+			<i class="head-setup"></i>
+		</div>
+		<!--头部登录注册E-->
+		<!-- 订单管理S-->
+		<div class="manage-box">
+			<div class="clearfix order-managebox">
+				<span class="fl">订单管理</span>
+				<a href="javascript:;" class="fr">查看全部订单</a>
+			</div>
+			<ul class="clearfix order-statelist">
+				<li class="fl add-waitpay add-waitpay-on posR">待支付<i class="add-waitpay-number">5</i></li>
+				<li class="fl add-waitsign add-waitsign-on">待报名</li>
+				<li class="fl add-signok add-signok-on">报名成功</li>
+				<li class="fl add-payover add-payover-on">支付超时</li>
+				<li class="fl add-cancel add-cancel-on">已撤单</li>
+			</ul>
+		</div>
+		<!-- 订单管理E-->
+		<!--绑定学员号S-->
+		<ul class="clearfix bind-box">
+			<li class="fl add-bind"><a href="javascript:;">绑定学员号</a></li>
+			<li class="fl add-send"><a href="javascript:;">配送地址管理</a></li>
+			<li class="fl add-inf"><a href="javascript:;">学员信息管理</a></li>
+			<li class="fl add-zhuantui"><a href="javascript:;">转/退班</a></li>
+			<li class="fl add-tuibu">退<a href="javascript:;">/补款</a></li>
+			<li class="fl add-yue"><a href="javascript:;">账户余额</a></li>
+		</ul>
+		<!--绑定学员号E-->
+		<!--底部导航S-->
+		<ul class="clearfix nav-box">
+			<li class="fl add-shouye">首页</li>
+			<li class="fl add-sousuo">分类搜索</li>
+			<li class="fl add-buycar posR">购物车<i class="add-waitpay-number2">5</i></li>
+			<li class="fl add-myorder_on">我的订单</li>
+		</ul>
+		<!--底部导航E-->
+	</body>
+	
+	<!--自适应布局JS-->
+	<script>
+		(function(win, doc) {
+			function change() {
+				doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 320 * 20 + 'px';
+			}
+
+			change();
+			win.addEventListener('resize', change, false);
+		})(window, document);
+	</script>
+	<!--自适应布局JS-->
+</html>

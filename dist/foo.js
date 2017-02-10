@@ -8,46 +8,17 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var fn = function fn(name) {
-    return name;
-};
-var elem = React.createElement(
-    'div',
-    null,
-    'hello',
-    fn('lhp'),
-    React.createElement(
-        'h2',
-        null,
-        'first'
-    )
-);
-ReactDOM.render(elem, document.getElementById('odiv'));
-console.log(123);
-
-var fn2 = function fn2(user) {
-    if (user) {
-        return React.createElement(
-            'h3',
-            { className: 'sf' },
-            '\u6210\u529F'
-        );
-    } else {
-        return React.createElement(
-            'h3',
-            null,
-            '\u5931\u8D25'
-        );
-    }
-};
-
-var Welcomes = function (_React$Component) {
+var React = require('react');
+module.exports = function (_React$Component) {
     _inherits(Welcomes, _React$Component);
 
-    function Welcomes() {
+    function Welcomes(props) {
         _classCallCheck(this, Welcomes);
 
-        return _possibleConstructorReturn(this, (Welcomes.__proto__ || Object.getPrototypeOf(Welcomes)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Welcomes.__proto__ || Object.getPrototypeOf(Welcomes)).call(this, props));
+
+        _this.state = { date: 123 };
+        return _this;
     }
 
     _createClass(Welcomes, [{
@@ -57,29 +28,10 @@ var Welcomes = function (_React$Component) {
                 'h1',
                 null,
                 'Hello, ',
-                this.props.name
+                this.state.date
             );
         }
     }]);
 
     return Welcomes;
 }(React.Component);
-
-var ele2 = fn2(true);
-
-function Welcome(p) {
-    return React.createElement(
-        'h1',
-        null,
-        'Hello, ',
-        p.name,
-        React.createElement(Welcomes, { name: 'Welcomes' })
-    );
-}
-
-var element = React.createElement(Welcome, { name: 'Sara' });
-/*ReactDOM.render(
-    element,
-    document.getElementById('root')
-);*/
-ReactDOM.render(element, document.getElementById('odiv2'));

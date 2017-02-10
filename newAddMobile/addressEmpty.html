@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>管理配送地址</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/addStudent.css" />
+	</head>
+	<body>
+		<div>
+			<!--头部S-->
+			<div class="choose_top">
+			        管理配送地址
+			    <a href="javascript:;" class="choose_arrow"></a>
+			    <a href="javascript:;" class="new_plus">新增</a>
+			</div>
+			<!--头部E-->
+			<div class="adress-emptybox">
+				<p>还木有收获地址呢！</p>
+				<p>快添加一个吧~</p>
+			</div>
+		</div>
+	</body>
+	
+	<!--自适应布局JS-->
+	<script>
+		(function(win, doc) {
+			function change() {
+				doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 320 * 20 + 'px';
+			}
+			change();
+			win.addEventListener('resize', change, false);
+		})(window, document);
+	</script>
+	<!--自适应布局JS-->
+</html>
